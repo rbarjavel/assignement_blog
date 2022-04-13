@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New post</title>
+</head>
+<body>
+    <div class="post_add_container">
+        <h1>Edit post</h1>
+    </div>
+    <div class="add_container">
+        <form action="http://127.0.0.1:8081/edit?id=<%= post.Guid %>" method="post" class="form_container">
+            <label for="title">title:</label>
+            <input type="text" name="title" value="<%= post.Title %>"/>
+            <label for="content">content:</label>
+            <textarea name="content" cols="50" rows="30"><%= post.Content %></textarea>
+            <input type="submit" value="submit" class="submit_bt"/>
+        </form>
+    </div>
+</body>
+</html>

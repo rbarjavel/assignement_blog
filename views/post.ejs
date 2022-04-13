@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="/css/style.css" rel="stylesheet" type="text/css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<body>
+    <div class="title_container">
+        <h1><%= posts.Title %></h1>
+        <h3> By <%= name %></h1>
+        <% if(show_edit) { %>
+            <a href="/edit?postid=<%= posts.Guid %>" class="edit_post_bt">Edit post</a>
+        <% } %>
+        <p style="white-space: break-spaces;"><%= posts.Content %></p>
+        <a href="/" class="new_post_bt">
+            Main menu
+        </a>
+</body>
+</html>

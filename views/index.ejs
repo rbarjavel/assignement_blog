@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="/css/style.css" rel="stylesheet" type="text/css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<body>
+    <div class="title_container">
+        <h1>Welcome on Blog</h1>
+        <div class="button_log_container">
+            <% if (name == 'anonymous') { %>
+            <a href="/login" class='login_bt'>login</a>    
+            <a href="/register" class='register_bt'>register</a>    
+            <% } %>
+
+            <% if (name != 'anonymous') { %>
+            <p>Welcome <%= name %></p>
+            <% } %>
+        </div>
+
+        <% if (name != 'anonymous') { %>
+        <div class="log_off_container">
+            <a href="/logoff" class='login_bt'>logoff</a>    
+        </div>
+        <% } %>
+        <!-- <%%> -->
+    </div>
+    <div class="post_container">
+
+        <% Object.values(posts).map((element, index) => { %>
+        <div class="post">
+            <div class="post_title">
+                <h3><%= element.Title %></h3>
+                <p><%= authors[index] %></p>
+            </div>
+            <a href="/post?id=<%= element.Guid %>">
+                Read more ...
+            </a>
+        </div>
+        <% }); %>
+
+    </div>
+    <a href="/new_post" class="new_post_bt">
+        Post Something
+    </a>
+</body>
+</html>

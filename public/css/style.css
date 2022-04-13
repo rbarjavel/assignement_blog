@@ -1,0 +1,119 @@
+.title_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button_log_container {
+    display: flex;
+    /* margin-right: 20%; */
+    /* margin-left: 20%; */
+    justify-content: center;
+}
+
+.login_bt {
+    margin-right: 50%;
+
+    background: black;
+    color: white;
+    padding: 5px 7px 5px 7px;
+}
+
+.register_bt {
+    margin-left: 50%;
+
+    background: black;
+    color: white;
+    padding: 5px;
+}
+
+.new_post_bt {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    /* left: 90%; */
+    background: black;
+    color: white;
+    padding: 5px;
+}
+
+.post_container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    margin-top: 50px;
+}
+
+.post {
+    height: 100px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px 0px 0px;
+}
+
+.post_title {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.edit_post_bt {
+    position: fixed;
+    background: black;
+    color: white;
+    padding: 5px;
+
+    bottom: 50px;
+    left: 50px;
+}
+
+.form_container {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+}
+
+.base_container {
+    display: flex;
+    /* position: absolute; */
+    height: 20vh;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit_bt {
+    background: black;
+    color: white;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.log_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30vh;
+}
+
+.post_add_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+add_container {
+    display: flex;
+    /* position: absolute; */
+    height: 60vh;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
